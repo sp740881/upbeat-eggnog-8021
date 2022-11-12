@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+    
+</head>
+<body>
+    <div id="container" >
+        <div id="cont2">
+            <div> <img src="https://tmetric.com/images/tmetric_logo_with_text.svg" alt=""> </div>
+            <div>
+                <p> <a href="#"></a>WhyTMetric</p>
+              <p>Apps & Integration</p>
+           <p>   Pricing</p>
+           <p><a href="support.html">Support </a> </p>
+               <p> Blog</p>
+            </div>
+                <div>
+                 <h3>log In</h3>
+                 <h3>SignUp</h3>
+                </div>
+        </div>
+    
+        <div id="top" >
+            <div>
+                <img src="https://tmetric.com/images/tmetric_logo_with_text.svg" alt="">
+                <h1>Blog to Increase Personal and Business Productivity</h1>
+            </div>
+            </div>
+        </div>
+            <div id="top2">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1548328928-34db1c5fcc1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fHlvdXR1YmUlMjB8ZW58MHx8fHwxNjYwNjMyNDA1&ixlib=rb-1.2.1&q=80&w=2000" alt="">
+                </div>
+                <div>
+                    <p>PRODUCTIVITY HACKS</p>
+                    <h1>
+                     Top YouTube Channels To Follow For Increased Productivity</h1>
+                     <p>There are a lot of channels out there that claim to know the secret to productivity. But sifting through all of them can be a productivity nightmare in and of itself. To save you the trouble, we’ve compiled a list of 10 channels that we believe will help you achieve peak productivity.</p>
+                </div>
+            </div>
+                <div id="down" >
+
+                </div>
+         
+</body>
+</html>
+<script>
+fetch(`blog.json`).then((res)=>res.json()).then((data)=>{
+    distab(data) 
+})
+function distab(data){
+data.forEach((el)=>{
+    div=document.createElement("div")
+    img=document.createElement("img")
+    img.src=el.img
+    p1=document.createElement("p")
+    p1.innerText="PRODUCTIVITY HACKS"
+    title=   p1=document.createElement("h2")
+    title.innerText=el.title
+    p2=document.createElement("p")
+    p2.innerText=el.des
+    div.append(img,p1,title,p2)
+    document.querySelector("#down").append(div)
+
+})
+}
+
+</script>

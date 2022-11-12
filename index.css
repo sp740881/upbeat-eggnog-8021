@@ -275,3 +275,56 @@ color:#0E60B2
     flex-direction: column;
     align-items: flex-start;
 }
+#down{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    text-align: center;
+    margin:50px auto;
+    padding-left: 40px;
+    padding:50px 0px;
+    
+}
+#down>div{
+    width:60%;
+}
+#down>div>img{
+    width:100%;
+    margin-left: 40px;
+}
+#button{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+#button>button{
+    width:50%;
+    display: flex;
+    margin-left:200px;
+    padding-top:20px ;
+    height: 100px;
+    padding-bottom:20px ;
+    padding-right: 40px;
+    align-items: center;
+    margin-top:15px;
+    border:none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+#button>button>img{
+    margin-left:60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#button>button:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .5s;
+}
+    #lower{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #f6f7f8;
+    padding:50px 10px;
+}

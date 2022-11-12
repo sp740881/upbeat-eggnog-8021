@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="container" >
@@ -16,7 +16,7 @@
               <p>Apps & Integration</p>
            <p>   Pricing</p>
            <p><a href="support.html">Support </a> </p>
-               <p> Blog</p>
+               <p> <a href="blog.html"> Blog </a> </p>
             </div>
                 <div>
                  <h3>log In</h3>
@@ -37,23 +37,57 @@
         </div>
     </div>
     <div id="mid-cont" >
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <h1>Best time tracking features for your business</h1>
+    <div id="down">
+        <div id="img">
+            <img src="https://tmetric.com/media/1kxfndjp/img-advantages.svg" alt="">
+        </div>
+    <div id="button">
+        <button class="button">
+            <img src="https://tmetric.com/media/2p4n4oyc/icon-timer-blue.svg" alt="">
+            <div>
+                <div class="h2"><h2>Time Tracking</h2></div>
+                <div class="childDiv"></div>
+            </div>
+        </button>
+        <button class="button">
+            <img   src="https://tmetric.com/media/1niddz51/icon-project-blue.svg" alt="">
+            <div>
+                <div class="h2"><h2>Project management</h2></div>
+                <div class="childDiv"></div>
+            </div>
+        </button>
+        <button class="button">
+            <img src="https://tmetric.com/media/2gxihhdu/icon-team-blue.svg" alt="">
+           <div>
+            <div class="h2"><h2>Team Management</h2></div>
+            <div class="childDiv"></div>
+           </div>
+        </button>
+        <button class="button">
+            <img src="https://tmetric.com/media/s4koycnp/icon-invoice-blue.svg" alt="">      
+            <div>
+               <div class="h2"><h2>Billing & Invoicing</h2></div> 
+               <div class="childDiv"></div>
+            </div>
+        </button>
+        <button class="button">
+            <img src="https://tmetric.com/media/yoblhiut/icon-reports-blue.svg" alt="">
+        <div>
+            <div class="h2"><h2>Reporting</h2></div>
+            <div class="childDiv"></div>
+        </div>
+        </button>
+        <button class="button">
+            <img src="https://tmetric.com/media/cajpa4uy/icon-time-off-blue.svg" alt="">
+            <div>
+                <div class="h2"><h2>Time off</h2></div>
+                <div class="childDiv"></div>
+            </div>
+        </button>
+      </div>
+    </div>
     <div id="mid2" >
         <div>
             <h1>Take effective control <br> of working time</h1>
@@ -250,19 +284,20 @@
 </div>
 </body>
 </html>
-<script>  bag=[]
-    fetch(`data.json`).then((res)=>res.json()).then((data)=>{ bag=[...data]
-        console.log(data)
-        disTab(data)
-    })
-    function disTab(data){
-        data.forEach((el)=>{
-            div=document.createElement("div")
-            img=document.createElement("img")
+<script > 
+bag=[]
+fetch(`data.json`).then((res)=>res.json()).then((data)=>{ bag=[...data]
+    console.log(data)
+    disTab(data)
+})
+function disTab(data){
+    data.forEach((el)=>{
+        div=document.createElement("div")
+        img=document.createElement("img")
 
-            img.src=el.img
-            div.append(img)
-            document.querySelector("#mid-cont").append(div)
-        })
-    }
+        img.src=el.img
+        div.append(img)
+        document.querySelector("#mid-cont").append(div)
+    })
+}
 </script>
