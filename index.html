@@ -10,7 +10,7 @@
 <body>
     <div id="container" >
         <div id="cont2">
-            <div> <img src="https://tmetric.com/images/tmetric_logo_with_text.svg" alt=""> </div>
+            <div id="imglogo"> <img src="logo.png" alt=""> </div>
             <div>
                 <p> <a href="#"></a>WhyTMetric</p>
               <p>Apps & Integration</p>
@@ -19,8 +19,8 @@
                <p> <a href="blog.html"> Blog </a> </p>
             </div>
                 <div>
-                 <h3>log In</h3>
-                 <h3>SignUp</h3>
+                 <h3> <a href="login.html"> log In </a></h3>
+                 <h3> <a href="signUp.html"> SignUp </a></h3>
                 </div>
         </div>
         <div id="top" >
@@ -39,6 +39,7 @@
     <div id="mid-cont" >
     </div>
     <h1>Best time tracking features for your business</h1>
+  
     <div id="down">
         <div id="img">
             <img src="https://tmetric.com/media/1kxfndjp/img-advantages.svg" alt="">
@@ -90,6 +91,7 @@
     </div>
     <div id="mid2" >
         <div>
+            
             <h1>Take effective control <br> of working time</h1>
             <ul>
                 <li> timekeeping</li>
@@ -160,30 +162,30 @@
         </div>
         <div>
             <div>
-                <p>We ultimately went with TMetric because it checked a lot of items on our want list 
+                <p id="text">We ultimately went with TMetric because it checked a lot of items on our want list 
                     its both a desktop and web app, and has an API taht we were able to integrate with 
                     our buisness management software. while that was the biggest selling point we also 
                     really like the user intrface, the chrome extension, and built-in integration with Jira</p>
                         <div>
                             <div>
-                                <h3>BizStream team</h3>
+                                <h3 id="clientName">BizStream team</h3>
                                 <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="">
                             </div>
                             <a href="">Read Full Story</a>
                         </div>
              </div>
-             <div>
-                <img src="https://tmetric.com/media/hznb1sgs/photo-software-developers.png" alt="">
+             <div id="imgClient">
+                <img  src="https://tmetric.com/media/hznb1sgs/photo-software-developers.png" alt="">
            </div>
         </div> 
-    </div>
+    </div>   
     <div id="marketlinks">
-        <a href="">Software developers</a>
-        <a href="">Marketers</a>
-        <a href="">Designer</a>
-        <a href="">Contractors</a>
-        <a href="">Consultants</a>
-        <a href="">Freelancers</a>
+        <button>Software developers</button> 
+        <button>Marketers</button>
+        <button>Designer</button>
+        <button>Contractors</button>
+        <button>Consultants</button>
+        <button>Freelancers</button>
     </div>
 <div class="down" >
     <h1>Read Hundreds of Reviews</h1>
@@ -284,20 +286,5 @@
 </div>
 </body>
 </html>
-<script > 
-bag=[]
-fetch(`data.json`).then((res)=>res.json()).then((data)=>{ bag=[...data]
-    console.log(data)
-    disTab(data)
-})
-function disTab(data){
-    data.forEach((el)=>{
-        div=document.createElement("div")
-        img=document.createElement("img")
-
-        img.src=el.img
-        div.append(img)
-        document.querySelector("#mid-cont").append(div)
-    })
-}
+<script src="/index.js" > 
 </script>
